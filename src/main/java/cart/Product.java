@@ -17,7 +17,8 @@ public class Product {
 
     }
 
-    //계산결과를 반환해야함
+    //계산결과를 반환해야함,
+    //현재상품의 총금액
     public int calculateTotalPrice() {
         return price * quantity;
     }
