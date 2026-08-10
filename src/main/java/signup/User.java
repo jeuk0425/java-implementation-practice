@@ -1,9 +1,9 @@
 package signup;
 
 public class User {
-    String id;
-    String password;
-    String name;
+    private String id;
+    private String password;
+    private String name;
 
     public User(String id, String password, String name) {
         this.id = id;
@@ -30,7 +30,7 @@ public class User {
 
     void validatePassword() {
         if (password.length() < 8 || password.length() > 20) {
-            throw new IllegalArgumentException("비밀번호는 8자 이상 20자 이하입니다.");
+            throw new IllegalArgumentException("비밀번호는 8자 이상 20자 이하여야 입니다.");
         }
         boolean hasLetter = false;
         boolean hasDigit = false;
