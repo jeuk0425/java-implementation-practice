@@ -1,14 +1,24 @@
 package cart;
 
 public class Product {
-    private String name;
-    private int price;
-    private int quantity;
+    private final String name;
+    private final int price;
+    private final int quantity;
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public int getPrice() {
+        return price;
+    }
 
     public Product(String name, int price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
+
+
 
         //생성자에서 값만저장하고끝내면안됨,-1000원이어도 생성됨 그래서 밑에추가해야함
         validateName();

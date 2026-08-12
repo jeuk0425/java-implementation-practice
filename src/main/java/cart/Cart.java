@@ -6,6 +6,10 @@ import java.util.List;
 public class Cart {
     private final List<Product> products = new ArrayList<>();
 
+    public final List<Product> getProducts() {
+        return List.copyOf(products);//현재상품들을 수정할 수 없는 새 목록으로 반환
+    }
+
     //내가 제일 부족한 것 : 메서드 사이에서 값을 전달하는 흐름, 즉 매개변수(parameter)에 대한 감각
     public void addProduct(Product product) {
         validateAddProduct(product);

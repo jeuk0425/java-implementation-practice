@@ -1,6 +1,6 @@
 package signup;
 
-public class Main {
+public class SignUpMain {
     public static void main(String[] args) {
 
         User user = new User("a4dfdd", "aaaaaaaaa", "jeuk");
